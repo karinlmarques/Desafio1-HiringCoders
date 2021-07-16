@@ -15,18 +15,18 @@
     <title>Promoções</title>
   </head>
   <body>
-    <header role="navigation" id="menu">
+    <header role="banner" id="menu">
       <div class="container">
         <h1 class="logo">DaHora Relógios</h1>
-        <nav>
-          <a href="#"> Início </a>
-          <a href="#products">Promoções</a>
-          <a href="#cadastro">Cadastre-se</a>
+        <nav role="navigation menu" aria-level="main navigation">
+          <a href="#" role="menuitem" title="Início"> Início </a>
+          <a href="#products" role="menuitem" title="promoções">Promoções</a>
+          <a href="#cadastro" role="menuitem" title="cadastre-se">Cadastre-se</a>
         </nav>
       </div>
     </header>
-    <section class="container-promo">
-      <img src="assets/promo.png" alt="promoção" />
+    <main role="main" class="container-promo">
+      <img src="assets/promo.png" alt="promoção" title="logo super promoção"/>
       <section class="promo">
         <h1>Queima de estoque</h1>
         <ul>
@@ -39,7 +39,7 @@
           >
         </ul>
       </section>
-    </section>
+    </main>
     <section id=products>
       <div class="titulo-promo">
         <h1>Alguns dos produtos que estarão na promoção:</h1>
@@ -47,56 +47,61 @@
     <section class="card-container-product">
       <div class="card">
         <h3 class="product-name">Relógio1</h3>
-        <img src="assets/rel1.jpg" alt="foto relógio1" />
+        <img src="assets/rel1.jpg" alt="foto relógio1" title="relógio 1"/>
         <p class="description">Lorem, ipsum dolor sit amet.</p>
       </div>
       <div class="card">
         <h3 class="product-name">Relógio2</h3>
-        <img src="assets/rel2.jpg" alt="foto relógio2" />
+        <img src="assets/rel2.jpg" alt="foto relógio2" title="relógio 2"/>
         <p class="description">Lorem, ipsum dolor sit amet.</p>
       </div>
       <div class="card">
         <h3 class="product-name">Relógio3</h3>
-        <img src="assets/rel3.jpg" alt="foto relógio3" />
+        <img src="assets/rel3.jpg" alt="foto relógio3" title="relógio  3"/>
         <p class="description">Lorem, ipsum dolor sit amet.</p>
       </div>
     </section>
     <section class="card-container-product">
       <div class="card">
         <h3 class="product-name">Relógio4</h3>
-        <img src="assets/rel4.jpg" alt="foto relógio4" />
+        <img src="assets/rel4.jpg" alt="foto relógio4" title="relógio 4"/>
         <p class="description">Lorem, ipsum dolor sit amet.</p>
       </div>
       <div class="card">
         <h3 class="product-name">Relógio5</h3>
-        <img src="assets/rel5.jpg" alt="foto relógio5" />
+        <img src="assets/rel5.jpg" alt="foto relógio5" title="relógio 5"/>
         <p class="description">Lorem, ipsum dolor sit amet.</p>
       </div>
       <div class="card">
         <h3 class="product-name">Relógio6</h3>
-        <img src="assets/rel6.jpg" alt="foto relógio6" />
+        <img src="assets/rel6.jpg" alt="foto relógio6" title="relógio 6"/>
         <p class="description">Lorem, ipsum dolor sit amet.</p>
       </div>
      </section>
   </section>
     <section id="cadastro">
       <div class="card-container-cadastro">
-        <p>Cadastre-se para receber as promoções:</p>
         <div id="content">
           <form id="form">
+            <fieldset>
+              <legend>Cadastre-se para receber as promoções:</legend>
+            
+            <label hidden for="name">Preencha com seu nome:</label>
             <input
               class="input"
               type="text"
               placeholder="digite seu nome"
-              id="nome"
+              id="name"
             />
+            <label hidden for="email">Preencha com seu e-mail:</label>
             <input
               class="input"
               type="text"
               placeholder="digite seu e-mail"
               id="email"
             />
-            <input class="input" type="submit" value="Cadastrar" />
+            <input class="input" type="submit" value="Cadastrar" id="Enviar" />
+          </fieldset>
           </form>
         </div>
       </div>
