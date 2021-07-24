@@ -2,10 +2,6 @@
 
 ------
 
-Olá, olá!
-
-Todo mundo pronto para colocar a mão na massa? :)
-
 **Desafio** - Criar um sistema de e-commerce para cadastro de email na landing page para recebimento de novidades e promoções.
 
 
@@ -24,4 +20,4 @@ Todo mundo pronto para colocar a mão na massa? :)
 
 -Dados no localstorage
 
-\- >Não é preciso ter domínio próprio e recomendamos o Netlify para hospedagem.
+Foi utilizado para o desenvolvimento as linguagens: HTML, CSS e JavaScript

@@ -14,7 +14,7 @@ header {
   position: sticky;
   top: 0;
 }
-header .container {
+.container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -23,13 +23,13 @@ header .container {
   color: #fff;
 }
 
-header nav a {
+.container nav a {
   text-decoration: none;
   margin-right: 1rem;
   font-size: 1rem;
   color: #fff;
 }
-header nav a:hover {
+.container nav a:hover {
   color: #a8a8a7;
 }
 .container-promo {
@@ -127,4 +127,6 @@ footer {
   text-align: center;
   background-color: #000;
   color: #fff;
+  display: block;
+  margin-bottom: 0;
 }
